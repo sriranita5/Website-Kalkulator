@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>Praktikum Week 6</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    
+    </head>
+    <body>
+        <div>
+            <h2>Kalkulator<br />Sederhana</h2><hr />
+            <form name="myform">
+                <input type="text" name="B1" id="fst"><br>
+                <input type="text" name="B2" id="snd"><br>
+                <input type="button" name="" value="+" onclick="add()">
+                <input type="button" name="" value="-" onclick="substract()">
+                <input type="button" name="" value="x" onclick="multiply()">
+                <input type="button" name="" value=":" onclick="divided()"><br>
+                <input type="text" name="result">
+            </form> 
+
+            <script type="text/javascript">
+                function add(){
+                    fst=parseInt(myform.fst.value);
+                    snd=parseInt(myform.snd.value)
+                    result=fst+snd;
+                    myform.result.value=result;
+                }
+
+                function substract(){
+                    fst=parseInt(myform.fst.value);
+                    snd=parseInt(myform.snd.value)
+                    result=fst-snd;
+                    myform.result.value=result;
+                }
+
+                function multiply(){
+                    fst=parseInt(myform.fst.value);
+                    snd=parseInt(myform.snd.value)
+                    result=fst*snd;
+                    myform.result.value=result;
+                }
+
+                function divided(){
+                    fst=parseInt(myform.fst.value);
+                    snd=parseInt(myform.snd.value)
+                    result=fst/snd;
+                    myform.result.value=result;
+                }
+            </script>
+    </body>
+</html>
